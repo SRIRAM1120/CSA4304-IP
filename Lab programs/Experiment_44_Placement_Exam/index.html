@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Take a timed practice test and view your score." name="description"/>
+  <title>
+   Campus Placement Assessment | Internet Programming Lab
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="script.js">
+  </script>
+ </head>
+ <body class="theme-exam" data-experiment="44">
+  <div class="announcement">
+   INTERNET PROGRAMMING LAB
+   <span>
+    EXPERIMENT 44
+   </span>
+   <span class="demo-flag">
+    FRONT-END DEMO
+   </span>
+  </div>
+  <header class="site-header">
+   <a class="brand" href="#top">
+    <span class="brand-mark">
+     &checkmark;
+    </span>
+    <span>
+     <strong>
+      Campus Placement Assessment
+     </strong>
+     <small>
+      Campus assessment
+     </small>
+    </span>
+   </a>
+   <nav class="main-nav">
+    <a href="#catalog">
+     Practice modules
+    </a>
+    <a href="#workspace">
+     Score report
+    </a>
+    <a href="#about">
+     About this demo
+    </a>
+   </nav>
+   <button class="nav-action" onclick="document.getElementById('workspace').scrollIntoView({behavior:'smooth'})">
+    Get started
+    <span>
+     &nearrow;
+    </span>
+   </button>
+  </header>
+  <main class="page-shell" id="top">
+   <section class="hero hero-console">
+    <div>
+     <p class="eyebrow">
+      ASSESSMENT / PRACTICE TEST
+     </p>
+     <h1>
+      Campus Placement Assessment
+     </h1>
+     <p>
+      Take a timed practice test and view your score.
+     </p>
+    </div>
+    <div class="console-art">
+     <div class="console-ring">
+      &checkmark;
+     </div>
+     <div class="console-bars">
+      <i>
+      </i>
+      <i>
+      </i>
+      <i>
+      </i>
+      <i>
+      </i>
+      <i>
+      </i>
+     </div>
+     <span>
+      LOCAL DEMO MODE
+     </span>
+    </div>
+   </section>
+   <div class="quick-strip">
+    <div class="quick-item">
+     <span class="quick-icon">
+      ✦
+     </span>
+     <span>
+      <strong>
+       Aptitude
+      </strong>
+      <small>
+       Choose a practice module.
+      </small>
+     </span>
+    </div>
+    <div class="quick-item">
+     <span class="quick-icon">
+      ◉
+     </span>
+     <span>
+      <strong>
+       Technical quiz
+      </strong>
+      <small>
+       Answer the sample questions.
+      </small>
+     </span>
+    </div>
+    <div class="quick-item">
+     <span class="quick-icon">
+      &nearrow;
+     </span>
+     <span>
+      <strong>
+       Score report
+      </strong>
+      <small>
+       Submit to see your score.
+      </small>
+     </span>
+    </div>
+   </div>
+   <section class="section-block" id="catalog">
+    <div class="section-heading">
+     <div>
+      <p class="eyebrow">
+       DISCOVER
+      </p>
+      <h2>
+       Practice modules
+      </h2>
+     </div>
+     <span class="section-count">
+      03 AREAS
+     </span>
+    </div>
+    <div class="feature-grid">
+     <article class="feature-card feature-1">
+      <div class="feature-symbol">
+       ✦
+      </div>
+      <h3>
+       Aptitude
+      </h3>
+      <p>
+       Choose a practice module.
+      </p>
+      <a href="#workspace">
+       Open module
+       <b>
+        &rarr;
+       </b>
+      </a>
+     </article>
+     <article class="feature-card feature-2">
+      <div class="feature-symbol">
+       ◈
+      </div>
+      <h3>
+       Technical quiz
+      </h3>
+      <p>
+       Answer the sample questions.
+      </p>
+      <a href="#workspace">
+       Open module
+       <b>
+        &rarr;
+       </b>
+      </a>
+     </article>
+     <article class="feature-card feature-3">
+      <div class="feature-symbol">
+       &nearrow;
+      </div>
+      <h3>
+       Score report
+      </h3>
+      <p>
+       Submit to see your score.
+      </p>
+      <a href="#workspace">
+       Open module
+       <b>
+        &rarr;
+       </b>
+      </a>
+     </article>
+    </div>
+   </section>
+   <section class="section-block workspace-section calculator-workspace" id="workspace">
+    <div class="workspace-heading">
+     <div>
+      <p class="eyebrow">
+       YOUR WORKSPACE
+      </p>
+      <h2>
+       Score report
+      </h2>
+      <p>
+       Answer each question, then submit to calculate your score.
+      </p>
+     </div>
+     <div class="workspace-stamp">
+      <span>
+       44
+      </span>
+      <small>
+       EXPERIMENT
+      </small>
+     </div>
+    </div>
+    <form class="workspace-form field-grid field-grid-compact" id="mainForm">
+     <label class="field">
+      <span>
+       Student name
+      </span>
+      <input id="field0" name="field0" placeholder="Enter student name" required="" type="text"/>
+     </label>
+     <label class="field">
+      <span>
+       Registration number
+      </span>
+      <input id="field1" name="field1" placeholder="Enter registration number" required="" type="text"/>
+     </label>
+     <label class="field">
+      <span>
+       Department
+      </span>
+      <select id="field2" name="field2">
+       <option value="">
+        Choose department
+       </option>
+       <option>
+        CSE
+       </option>
+       <option>
+        IT
+       </option>
+       <option>
+        ECE
+       </option>
+       <option>
+        EEE
+       </option>
+       <option>
+        Mechanical
+       </option>
+       <option>
+        Civil
+       </option>
+       <option>
+        Other
+       </option>
+      </select>
+     </label>
+     <label class="field">
+      <span>
+       Question 1: HTML stands for?
+      </span>
+      <select id="field3" name="field3">
+       <option value="">
+        Choose question 1: html stands for?
+       </option>
+       <option>
+        Hyper Text Markup Language
+       </option>
+       <option>
+        High Transfer Machine Link
+       </option>
+       <option>
+        Home Tool Markup Language
+       </option>
+      </select>
+     </label>
+     <label class="field">
+      <span>
+       Question 2: CSS is used for?
+      </span>
+      <select id="field4" name="field4">
+       <option value="">
+        Choose question 2: css is used for?
+       </option>
+       <option>
+        Styling web pages
+       </option>
+       <option>
+        Database queries
+       </option>
+       <option>
+        Server hosting
+       </option>
+      </select>
+     </label>
+     <label class="field">
+      <span>
+       Question 3: JavaScript runs in?
+      </span>
+      <select id="field5" name="field5">
+       <option value="">
+        Choose question 3: javascript runs in?
+       </option>
+       <option>
+        Browser and server
+       </option>
+       <option>
+        Only spreadsheets
+       </option>
+       <option>
+        Only image editor
+       </option>
+      </select>
+     </label>
+     <div class="form-actions">
+      <button class="submit-btn" type="submit">
+       Submit practice test
+       <span>
+        &rarr;
+       </span>
+      </button>
+      <button class="reset-btn" type="reset">
+       Clear form
+      </button>
+     </div>
+    </form>
+    <div aria-live="polite" class="result-panel" hidden="" id="result">
+    </div>
+   </section>
+   <section class="note-band">
+    <div class="note-icon">
+     ✳
+    </div>
+    <div>
+     <p class="eyebrow">
+      GOOD TO KNOW
+     </p>
+     <h2>
+      Practice responsibly
+     </h2>
+     <p>
+      The result is for practice only and is not an official placement assessment.
+     </p>
+    </div>
+    <a href="#workspace">
+     Continue to workspace &nearrow;
+    </a>
+   </section>
+   <section class="about-demo" id="about">
+    <div>
+     <p class="eyebrow">
+      ABOUT THIS EXPERIMENT
+     </p>
+     <h2>
+      A task-focused interface, built for the lab.
+     </h2>
+    </div>
+    <p>
+     This website demonstrates the fields, workflow and result associated with
+     <strong>
+      Experiment 44: Campus Placement Assessment
+     </strong>
+     . Generated records are stored only in this page session and are not sent to a server.
+    </p>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <span>
+    &copy; 2026 Campus Placement Assessment &mdash; Lab demonstration
+   </span>
+   <span>
+    HTML &middot; CSS &middot; JavaScript
+    <b>
+     ●
+    </b>
+    Responsive UI
+   </span>
+  </footer>
+ </body>
+</html>
+

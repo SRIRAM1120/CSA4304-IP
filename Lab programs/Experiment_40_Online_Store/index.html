@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="A simple catalogue, cart and checkout experience." name="description"/>
+  <title>
+   Everyday Market Online Store | Internet Programming Lab
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="script.js">
+  </script>
+ </head>
+ <body class="theme-shop" data-experiment="40">
+  <div class="announcement">
+   INTERNET PROGRAMMING LAB
+   <span>
+    EXPERIMENT 40
+   </span>
+   <span class="demo-flag">
+    FRONT-END DEMO
+   </span>
+  </div>
+  <header class="site-header">
+   <a class="brand" href="#top">
+    <span class="brand-mark">
+     ✦
+    </span>
+    <span>
+     <strong>
+      Everyday Market Online Store
+     </strong>
+     <small>
+      Marketplace
+     </small>
+    </span>
+   </a>
+   <nav class="main-nav">
+    <a href="#catalog">
+     Shop by category
+    </a>
+    <a href="#workspace">
+     Your basket
+    </a>
+    <a href="#about">
+     About this demo
+    </a>
+   </nav>
+   <button class="nav-action" onclick="document.getElementById('workspace').scrollIntoView({behavior:'smooth'})">
+    Get started
+    <span>
+     &nearrow;
+    </span>
+   </button>
+  </header>
+  <main class="page-shell" id="top">
+   <section class="hero hero-store">
+    <div class="hero-copy">
+     <p class="eyebrow">
+      COMMERCE / ONLINE STORE
+     </p>
+     <h1>
+      Everyday Market Online Store
+      <br/>
+      <em>
+       A simple catalogue, cart and checkout experience.
+      </em>
+     </h1>
+     <p class="hero-sub">
+      Explore collections selected for your everyday needs.
+     </p>
+     <a class="primary-link" href="#catalog">
+      Explore collection
+      <b>
+       &nearrow;
+      </b>
+     </a>
+    </div>
+    <div class="hero-art">
+     <div class="art-orbit orbit-one">
+     </div>
+     <div class="art-orbit orbit-two">
+     </div>
+     <div class="art-object">
+      🛍️
+     </div>
+     <div class="floating-note">
+      Curated for you
+      <strong>
+       ✦
+      </strong>
+     </div>
+    </div>
+   </section>
+   <div class="quick-strip">
+    <div class="quick-item">
+     <span class="quick-icon">
+      ✦
+     </span>
+     <span>
+      <strong>
+       Popular categories
+      </strong>
+      <small>
+       Browse curated categories.
+      </small>
+     </span>
+    </div>
+    <div class="quick-item">
+     <span class="quick-icon">
+      ◉
+     </span>
+     <span>
+      <strong>
+       Today&rsquo;s offers
+      </strong>
+      <small>
+       Check product details and pricing.
+      </small>
+     </span>
+    </div>
+    <div class="quick-item">
+     <span class="quick-icon">
+      &nearrow;
+     </span>
+     <span>
+      <strong>
+       Recently added
+      </strong>
+      <small>
+       Review items before checkout.
+      </small>
+     </span>
+    </div>
+   </div>
+   <section class="section-block product-section" id="catalog">
+    <div class="section-heading">
+     <div>
+      <p class="eyebrow">
+       THE COLLECTION
+      </p>
+      <h2>
+       Popular right now
+      </h2>
+     </div>
+     <div class="product-controls">
+      <select id="categoryFilter">
+       <option value="All">
+        All categories
+       </option>
+       <option>
+        Home
+       </option>
+       <option>
+        Kitchen
+       </option>
+       <option>
+        Lifestyle
+       </option>
+       <option>
+        Stationery
+       </option>
+      </select>
+      <span class="cart-pill">
+       🛍 Cart
+       <b id="cartCount">
+        0
+       </b>
+      </span>
+     </div>
+    </div>
+    <div class="product-grid">
+     <article class="product-card" data-category="Home">
+      <button aria-label="Save item" class="heart" type="button">
+       ♡
+      </button>
+      <div class="product-art product-art-1">
+       <span>
+        ☕
+       </span>
+       <small>
+        BESTSELLER
+       </small>
+      </div>
+      <div class="product-info">
+       <small>
+        Home
+       </small>
+       <h3>
+        Ceramic mug set
+       </h3>
+       <div class="rating">
+        &starf; 4.8
+        <span>
+         (31)
+        </span>
+       </div>
+       <div class="price-row">
+        <strong>
+         ₹399
+        </strong>
+        <span class="old-price">
+         ₹699
+        </span>
+       </div>
+       <button class="add-cart" data-price="399" data-product="Ceramic mug set" type="button">
+        Add to cart +
+       </button>
+      </div>
+     </article>
+     <article class="product-card" data-category="Stationery">
+      <button aria-label="Save item" class="heart" type="button">
+       ♡
+      </button>
+      <div class="product-art product-art-2">
+       <span>
+        🗂️
+       </span>
+       <small>
+        NEW FIND
+       </small>
+      </div>
+      <div class="product-info">
+       <small>
+        Stationery
+       </small>
+       <h3>
+        Desk organiser
+       </h3>
+       <div class="rating">
+        &starf; 4.7
+        <span>
+         (38)
+        </span>
+       </div>
+       <div class="price-row">
+        <strong>
+         ₹249
+        </strong>
+        <span class="old-price">
+         ₹549
+        </span>
+       </div>
+       <button class="add-cart" data-price="249" data-product="Desk organiser" type="button">
+        Add to cart +
+       </button>
+      </div>
+     </article>
+     <article class="product-card" data-category="Home">
+      <button aria-label="Save item" class="heart" type="button">
+       ♡
+      </button>
+      <div class="product-art product-art-3">
+       <span>
+        💡
+       </span>
+       <small>
+        PICKED FOR YOU
+       </small>
+      </div>
+      <div class="product-info">
+       <small>
+        Home
+       </small>
+       <h3>
+        LED desk lamp
+       </h3>
+       <div class="rating">
+        &starf; 4.6
+        <span>
+         (45)
+        </span>
+       </div>
+       <div class="price-row">
+        <strong>
+         ₹699
+        </strong>
+        <span class="old-price">
+         ₹999
+        </span>
+       </div>
+       <button class="add-cart" data-price="699" data-product="LED desk lamp" type="button">
+        Add to cart +
+       </button>
+      </div>
+     </article>
+     <article class="product-card" data-category="Lifestyle">
+      <button aria-label="Save item" class="heart" type="button">
+       ♡
+      </button>
+      <div class="product-art product-art-4">
+       <span>
+        🧴
+       </span>
+       <small>
+        NEW FIND
+       </small>
+      </div>
+      <div class="product-info">
+       <small>
+        Lifestyle
+       </small>
+       <h3>
+        Reusable bottle
+       </h3>
+       <div class="rating">
+        &starf; 4.5
+        <span>
+         (52)
+        </span>
+       </div>
+       <div class="price-row">
+        <strong>
+         ₹299
+        </strong>
+        <span class="old-price">
+         ₹599
+        </span>
+       </div>
+       <button class="add-cart" data-price="299" data-product="Reusable bottle" type="button">
+        Add to cart +
+       </button>
+      </div>
+     </article>
+     <article class="product-card" data-category="Home">
+      <button aria-label="Save item" class="heart" type="button">
+       ♡
+      </button>
+      <div class="product-art product-art-5">
+       <span>
+        🛏️
+       </span>
+       <small>
+        GREAT VALUE
+       </small>
+      </div>
+      <div class="product-info">
+       <small>
+        Home
+       </small>
+       <h3>
+        Cotton bedsheet
+       </h3>
+       <div class="rating">
+        &starf; 4.8
+        <span>
+         (59)
+        </span>
+       </div>
+       <div class="price-row">
+        <strong>
+         ₹899
+        </strong>
+        <span class="old-price">
+         ₹1,199
+        </span>
+       </div>
+       <button class="add-cart" data-price="899" data-product="Cotton bedsheet" type="button">
+        Add to cart +
+       </button>
+      </div>
+     </article>
+     <article class="product-card" data-category="Kitchen">
+      <button aria-label="Save item" class="heart" type="button">
+       ♡
+      </button>
+      <div class="product-art product-art-6">
+       <span>
+        🍱
+       </span>
+       <small>
+        NEW FIND
+       </small>
+      </div>
+      <div class="product-info">
+       <small>
+        Kitchen
+       </small>
+       <h3>
+        Kitchen storage set
+       </h3>
+       <div class="rating">
+        &starf; 4.7
+        <span>
+         (66)
+        </span>
+       </div>
+       <div class="price-row">
+        <strong>
+         ₹549
+        </strong>
+        <span class="old-price">
+         ₹849
+        </span>
+       </div>
+       <button class="add-cart" data-price="549" data-product="Kitchen storage set" type="button">
+        Add to cart +
+       </button>
+      </div>
+     </article>
+    </div>
+    <div aria-live="polite" class="cart-feedback" id="cartFeedback">
+     Your cart is empty. Add a product to see your cart total.
+    </div>
+   </section>
+   <section class="section-block workspace-section" id="workspace">
+    <div class="workspace-heading">
+     <div>
+      <p class="eyebrow">
+       PERSONALISE YOUR EXPERIENCE
+      </p>
+      <h2>
+       Search &amp; checkout
+      </h2>
+      <p>
+       Use the controls to filter the collection or generate a sample order.
+      </p>
+     </div>
+     <div class="workspace-badge">
+      DEMO CHECKOUT
+      <span>
+       ●
+      </span>
+     </div>
+    </div>
+    <form class="workspace-form store-form" id="mainForm">
+     <label class="field">
+      <span>
+       Search item
+      </span>
+      <input id="field0" name="field0" placeholder="Enter search item" required="" type="search"/>
+     </label>
+     <label class="field">
+      <span>
+       Category
+      </span>
+      <select id="field1" name="field1" required="">
+       <option value="">
+        Choose category
+       </option>
+       <option>
+        Home
+       </option>
+       <option>
+        Kitchen
+       </option>
+       <option>
+        Electronics
+       </option>
+       <option>
+        Stationery
+       </option>
+       <option>
+        Personal care
+       </option>
+      </select>
+     </label>
+     <label class="field">
+      <span>
+       Quantity
+      </span>
+      <input id="field2" min="0" name="field2" placeholder="Enter quantity" type="number"/>
+     </label>
+     <label class="field">
+      <span>
+       Delivery pincode
+      </span>
+      <input id="field3" name="field3" placeholder="Enter delivery pincode" type="text"/>
+     </label>
+     <label class="field">
+      <span>
+       Payment method
+      </span>
+      <select id="field4" name="field4">
+       <option value="">
+        Choose payment method
+       </option>
+       <option>
+        UPI
+       </option>
+       <option>
+        Card
+       </option>
+       <option>
+        Cash on delivery
+       </option>
+       <option>
+        Net banking
+       </option>
+      </select>
+     </label>
+     <button class="submit-btn" type="submit">
+      Add to cart / checkout
+      <span>
+       &rarr;
+      </span>
+     </button>
+    </form>
+    <div aria-live="polite" class="result-panel" hidden="" id="result">
+    </div>
+   </section>
+   <section class="note-band">
+    <div class="note-icon">
+     ✳
+    </div>
+    <div>
+     <p class="eyebrow">
+      GOOD TO KNOW
+     </p>
+     <h2>
+      Shopping, made simple
+     </h2>
+     <p>
+      Add items to your cart, change the category filter and preview your total before demo checkout.
+     </p>
+    </div>
+    <a href="#workspace">
+     Continue to workspace &nearrow;
+    </a>
+   </section>
+   <section class="about-demo" id="about">
+    <div>
+     <p class="eyebrow">
+      ABOUT THIS EXPERIMENT
+     </p>
+     <h2>
+      A task-focused interface, built for the lab.
+     </h2>
+    </div>
+    <p>
+     This website demonstrates the fields, workflow and result associated with
+     <strong>
+      Experiment 40: Everyday Market Online Store
+     </strong>
+     . Generated records are stored only in this page session and are not sent to a server.
+    </p>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <span>
+    &copy; 2026 Everyday Market Online Store &mdash; Lab demonstration
+   </span>
+   <span>
+    HTML &middot; CSS &middot; JavaScript
+    <b>
+     ●
+    </b>
+    Responsive UI
+   </span>
+  </footer>
+ </body>
+</html>
+

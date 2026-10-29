@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Stories, destination guides and photo diaries from the road." name="description"/>
+  <title>
+   WanderNotes Travel Journal | Internet Programming Lab
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="script.js">
+  </script>
+ </head>
+ <body class="theme-blog" data-experiment="41">
+  <div class="announcement">
+   INTERNET PROGRAMMING LAB
+   <span>
+    EXPERIMENT 41
+   </span>
+   <span class="demo-flag">
+    FRONT-END DEMO
+   </span>
+  </div>
+  <header class="site-header">
+   <a class="brand" href="#top">
+    <span class="brand-mark">
+     W
+    </span>
+    <span>
+     <strong>
+      WanderNotes Travel Journal
+     </strong>
+     <small>
+      WanderNotes
+     </small>
+    </span>
+   </a>
+   <nav class="main-nav">
+    <a href="#catalog">
+     Recent stories
+    </a>
+    <a href="#workspace">
+     Community notes
+    </a>
+    <a href="#about">
+     About this demo
+    </a>
+   </nav>
+   <button class="nav-action" onclick="document.getElementById('workspace').scrollIntoView({behavior:'smooth'})">
+    Get started
+    <span>
+     &nearrow;
+    </span>
+   </button>
+  </header>
+  <main class="page-shell" id="top">
+   <section class="hero hero-editorial">
+    <p class="eyebrow">
+     STORIES / TRAVEL JOURNAL
+    </p>
+    <h1>
+     WanderNotes Travel Journal
+    </h1>
+    <p class="editorial-lead">
+     Stories, destination guides and photo diaries from the road.
+    </p>
+    <div class="editorial-line">
+    </div>
+    <span class="editorial-note">
+     DISCOVER &middot; EXPLORE &middot; CONNECT
+    </span>
+   </section>
+   <div class="quick-strip">
+    <div class="quick-item">
+     <span class="quick-icon">
+      ✦
+     </span>
+     <span>
+      <strong>
+       Latest stories
+      </strong>
+      <small>
+       Read recent travel stories.
+      </small>
+     </span>
+    </div>
+    <div class="quick-item">
+     <span class="quick-icon">
+      ◉
+     </span>
+     <span>
+      <strong>
+       Destination guides
+      </strong>
+      <small>
+       Explore places and destination guides.
+      </small>
+     </span>
+    </div>
+    <div class="quick-item">
+     <span class="quick-icon">
+      &nearrow;
+     </span>
+     <span>
+      <strong>
+       Photo journal
+      </strong>
+      <small>
+       Share a comment with the author.
+      </small>
+     </span>
+    </div>
+   </div>
+   <section class="section-block" id="catalog">
+    <div class="section-heading">
+     <div>
+      <p class="eyebrow">
+       DISCOVER
+      </p>
+      <h2>
+       Recent stories
+      </h2>
+     </div>
+     <span class="section-count">
+      03 AREAS
+     </span>
+    </div>
+    <div class="feature-grid">
+     <article class="feature-card feature-1">
+      <div class="feature-symbol">
+       ✦
+      </div>
+      <h3>
+       Latest stories
+      </h3>
+      <p>
+       Read recent travel stories.
+      </p>
+      <a href="#workspace">
+       Open module
+       <b>
+        &rarr;
+       </b>
+      </a>
+     </article>
+     <article class="feature-card feature-2">
+      <div class="feature-symbol">
+       ◈
+      </div>
+      <h3>
+       Destination guides
+      </h3>
+      <p>
+       Explore places and destination guides.
+      </p>
+      <a href="#workspace">
+       Open module
+       <b>
+        &rarr;
+       </b>
+      </a>
+     </article>
+     <article class="feature-card feature-3">
+      <div class="feature-symbol">
+       &nearrow;
+      </div>
+      <h3>
+       Photo journal
+      </h3>
+      <p>
+       Share a comment with the author.
+      </p>
+      <a href="#workspace">
+       Open module
+       <b>
+        &rarr;
+       </b>
+      </a>
+     </article>
+    </div>
+   </section>
+   <section class="section-block workspace-section editorial-workspace" id="workspace">
+    <div class="workspace-heading">
+     <div>
+      <p class="eyebrow">
+       YOUR WORKSPACE
+      </p>
+      <h2>
+       Community notes
+      </h2>
+      <p>
+       Search the journal or add a comment.
+      </p>
+     </div>
+     <div class="workspace-stamp">
+      <span>
+       41
+      </span>
+      <small>
+       EXPERIMENT
+      </small>
+     </div>
+    </div>
+    <form class="workspace-form field-grid field-grid-compact" id="mainForm">
+     <label class="field">
+      <span>
+       Search stories
+      </span>
+      <input id="field0" name="field0" placeholder="Enter search stories" required="" type="search"/>
+     </label>
+     <label class="field">
+      <span>
+       Destination
+      </span>
+      <input id="field1" name="field1" placeholder="Enter destination" required="" type="text"/>
+     </label>
+     <label class="field">
+      <span>
+       Travel style
+      </span>
+      <select id="field2" name="field2">
+       <option value="">
+        Choose travel style
+       </option>
+       <option>
+        Adventure
+       </option>
+       <option>
+        Culture
+       </option>
+       <option>
+        Food
+       </option>
+       <option>
+        Family
+       </option>
+       <option>
+        Budget
+       </option>
+      </select>
+     </label>
+     <label class="field">
+      <span>
+       Commenter name
+      </span>
+      <input id="field3" name="field3" placeholder="Enter commenter name" type="text"/>
+     </label>
+     <label class="field wide">
+      <span>
+       Comment
+      </span>
+      <textarea id="field4" name="field4" placeholder="Enter comment" rows="3"></textarea>
+     </label>
+     <label class="field">
+      <span>
+       Subscribe
+      </span>
+      <select id="field5" name="field5">
+       <option value="">
+        Choose subscribe
+       </option>
+       <option>
+        Yes
+       </option>
+       <option>
+        No
+       </option>
+      </select>
+     </label>
+     <div class="form-actions">
+      <button class="submit-btn" type="submit">
+       Find stories / post comment
+       <span>
+        &rarr;
+       </span>
+      </button>
+      <button class="reset-btn" type="reset">
+       Clear form
+      </button>
+     </div>
+    </form>
+    <div aria-live="polite" class="result-panel" hidden="" id="result">
+    </div>
+   </section>
+   <section class="note-band">
+    <div class="note-icon">
+     ✳
+    </div>
+    <div>
+     <p class="eyebrow">
+      GOOD TO KNOW
+     </p>
+     <h2>
+      Built around the task
+     </h2>
+     <p>
+      This page uses controls and a result format tailored to this experiment.
+     </p>
+    </div>
+    <a href="#workspace">
+     Continue to workspace &nearrow;
+    </a>
+   </section>
+   <section class="about-demo" id="about">
+    <div>
+     <p class="eyebrow">
+      ABOUT THIS EXPERIMENT
+     </p>
+     <h2>
+      A task-focused interface, built for the lab.
+     </h2>
+    </div>
+    <p>
+     This website demonstrates the fields, workflow and result associated with
+     <strong>
+      Experiment 41: WanderNotes Travel Journal
+     </strong>
+     . Generated records are stored only in this page session and are not sent to a server.
+    </p>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <span>
+    &copy; 2026 WanderNotes Travel Journal &mdash; Lab demonstration
+   </span>
+   <span>
+    HTML &middot; CSS &middot; JavaScript
+    <b>
+     ●
+    </b>
+    Responsive UI
+   </span>
+  </footer>
+ </body>
+</html>
+
