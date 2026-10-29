@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Explore the menu, special events and reserve a table." name="description"/>
+  <title>
+   Gourmet Haven Restaurant | Internet Programming Lab
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="script.js">
+  </script>
+ </head>
+ <body class="theme-restaurant" data-experiment="39">
+  <div class="announcement">
+   INTERNET PROGRAMMING LAB
+   <span>
+    EXPERIMENT 39
+   </span>
+   <span class="demo-flag">
+    FRONT-END DEMO
+   </span>
+  </div>
+  <header class="site-header">
+   <a class="brand" href="#top">
+    <span class="brand-mark">
+     ♨
+    </span>
+    <span>
+     <strong>
+      Gourmet Haven Restaurant
+     </strong>
+     <small>
+      Gourmet Haven
+     </small>
+    </span>
+   </a>
+   <nav class="main-nav">
+    <a href="#catalog">
+     Explore the menu
+    </a>
+    <a href="#workspace">
+     Reservation card
+    </a>
+    <a href="#about">
+     About this demo
+    </a>
+   </nav>
+   <button class="nav-action" onclick="document.getElementById('workspace').scrollIntoView({behavior:'smooth'})">
+    Get started
+    <span>
+     &nearrow;
+    </span>
+   </button>
+  </header>
+  <main class="page-shell" id="top">
+   <section class="hero hero-default">
+    <div>
+     <p class="eyebrow">
+      DINING / RESTAURANT
+     </p>
+     <h1>
+      Gourmet Haven Restaurant
+     </h1>
+     <p>
+      Explore the menu, special events and reserve a table.
+     </p>
+     <div class="hero-pills">
+      <span>
+       ✦ Simple workflow
+      </span>
+      <span>
+       ◉ Responsive design
+      </span>
+     </div>
+    </div>
+    <div class="hero-mark">
+     <span>
+      ♨
+     </span>
+     <small>
+      39 / LAB PROJECT
+     </small>
+    </div>
+   </section>
+   <div class="quick-strip">
+    <div class="quick-item">
+     <span class="quick-icon">
+      ✦
+     </span>
+     <span>
+      <strong>
+       Chef&rsquo;s menu
+      </strong>
+      <small>
+       Browse dishes and chef selections.
+      </small>
+     </span>
+    </div>
+    <div class="quick-item">
+     <span class="quick-icon">
+      ◉
+     </span>
+     <span>
+      <strong>
+       Special offers
+      </strong>
+      <small>
+       Review offers and dining options.
+      </small>
+     </span>
+    </div>
+    <div class="quick-item">
+     <span class="quick-icon">
+      &nearrow;
+     </span>
+     <span>
+      <strong>
+       Guest stories
+      </strong>
+      <small>
+       Reserve a table for your party.
+      </small>
+     </span>
+    </div>
+   </div>
+   <section class="section-block" id="catalog">
+    <div class="section-heading">
+     <div>
+      <p class="eyebrow">
+       DISCOVER
+      </p>
+      <h2>
+       Explore the menu
+      </h2>
+     </div>
+     <span class="section-count">
+      03 AREAS
+     </span>
+    </div>
+    <div class="feature-grid">
+     <article class="feature-card feature-1">
+      <div class="feature-symbol">
+       ✦
+      </div>
+      <h3>
+       Chef&rsquo;s menu
+      </h3>
+      <p>
+       Browse dishes and chef selections.
+      </p>
+      <a href="#workspace">
+       Open module
+       <b>
+        &rarr;
+       </b>
+      </a>
+     </article>
+     <article class="feature-card feature-2">
+      <div class="feature-symbol">
+       ◈
+      </div>
+      <h3>
+       Special offers
+      </h3>
+      <p>
+       Review offers and dining options.
+      </p>
+      <a href="#workspace">
+       Open module
+       <b>
+        &rarr;
+       </b>
+      </a>
+     </article>
+     <article class="feature-card feature-3">
+      <div class="feature-symbol">
+       &nearrow;
+      </div>
+      <h3>
+       Guest stories
+      </h3>
+      <p>
+       Reserve a table for your party.
+      </p>
+      <a href="#workspace">
+       Open module
+       <b>
+        &rarr;
+       </b>
+      </a>
+     </article>
+    </div>
+   </section>
+   <section class="section-block workspace-section booking-workspace" id="workspace">
+    <div class="workspace-heading">
+     <div>
+      <p class="eyebrow">
+       YOUR WORKSPACE
+      </p>
+      <h2>
+       Reservation card
+      </h2>
+      <p>
+       Tell us when you would like to dine.
+      </p>
+     </div>
+     <div class="workspace-stamp">
+      <span>
+       39
+      </span>
+      <small>
+       EXPERIMENT
+      </small>
+     </div>
+    </div>
+    <form class="workspace-form field-grid" id="mainForm">
+     <label class="field">
+      <span>
+       Guest name
+      </span>
+      <input id="field0" name="field0" placeholder="Enter guest name" required="" type="text"/>
+     </label>
+     <label class="field">
+      <span>
+       Date
+      </span>
+      <input id="field1" name="field1" placeholder="Enter date" required="" type="date"/>
+     </label>
+     <label class="field">
+      <span>
+       Time
+      </span>
+      <select id="field2" name="field2">
+       <option value="">
+        Choose time
+       </option>
+       <option>
+        12:00 PM
+       </option>
+       <option>
+        1:00 PM
+       </option>
+       <option>
+        6:00 PM
+       </option>
+       <option>
+        7:00 PM
+       </option>
+       <option>
+        8:30 PM
+       </option>
+      </select>
+     </label>
+     <label class="field">
+      <span>
+       Guests
+      </span>
+      <input id="field3" min="0" name="field3" placeholder="Enter guests" type="number"/>
+     </label>
+     <label class="field">
+      <span>
+       Occasion
+      </span>
+      <select id="field4" name="field4">
+       <option value="">
+        Choose occasion
+       </option>
+       <option>
+        Regular dining
+       </option>
+       <option>
+        Birthday
+       </option>
+       <option>
+        Anniversary
+       </option>
+       <option>
+        Business
+       </option>
+      </select>
+     </label>
+     <label class="field">
+      <span>
+       Menu preference
+      </span>
+      <select id="field5" name="field5">
+       <option value="">
+        Choose menu preference
+       </option>
+       <option>
+        Vegetarian
+       </option>
+       <option>
+        Non-vegetarian
+       </option>
+       <option>
+        Vegan
+       </option>
+       <option>
+        Chef selection
+       </option>
+      </select>
+     </label>
+     <label class="field wide">
+      <span>
+       Special request
+      </span>
+      <textarea id="field6" name="field6" placeholder="Enter special request" rows="3"></textarea>
+     </label>
+     <div class="form-actions">
+      <button class="submit-btn" type="submit">
+       Reserve a table
+       <span>
+        &rarr;
+       </span>
+      </button>
+      <button class="reset-btn" type="reset">
+       Clear form
+      </button>
+     </div>
+    </form>
+    <div aria-live="polite" class="result-panel" hidden="" id="result">
+    </div>
+   </section>
+   <section class="note-band">
+    <div class="note-icon">
+     ✳
+    </div>
+    <div>
+     <p class="eyebrow">
+      GOOD TO KNOW
+     </p>
+     <h2>
+      A thoughtful dining experience
+     </h2>
+     <p>
+      A real reservation system needs live table availability and server-side booking records.
+     </p>
+    </div>
+    <a href="#workspace">
+     Continue to workspace &nearrow;
+    </a>
+   </section>
+   <section class="about-demo" id="about">
+    <div>
+     <p class="eyebrow">
+      ABOUT THIS EXPERIMENT
+     </p>
+     <h2>
+      A task-focused interface, built for the lab.
+     </h2>
+    </div>
+    <p>
+     This website demonstrates the fields, workflow and result associated with
+     <strong>
+      Experiment 39: Gourmet Haven Restaurant
+     </strong>
+     . Generated records are stored only in this page session and are not sent to a server.
+    </p>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <span>
+    &copy; 2026 Gourmet Haven Restaurant &mdash; Lab demonstration
+   </span>
+   <span>
+    HTML &middot; CSS &middot; JavaScript
+    <b>
+     ●
+    </b>
+    Responsive UI
+   </span>
+  </footer>
+ </body>
+</html>
+
